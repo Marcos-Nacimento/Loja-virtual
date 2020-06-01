@@ -4,6 +4,4 @@
  Desevolvido com [Expo](https://expo.io/)
 # Instalação
 
-$ https://github.com/Marcos-Nacimento/Loja-virtual.git
-
 $ yarn install ou npm install
