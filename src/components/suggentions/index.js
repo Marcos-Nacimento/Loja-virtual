@@ -2,13 +2,11 @@ import React from 'react'
 
 import { Container, Img, Option, Label } from './styles'
 
-import img01 from '../../img/will.jpg'
-
 const items = 
 [
     {
         id: 1,
-        img: img01,
+        img: 'url',
         name: 'EMC',
     },
     {
