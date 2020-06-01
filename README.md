@@ -3,3 +3,7 @@
  
  Desevolvido com Expo.
 # Instalação
+
+$ https://github.com/Marcos-Nacimento/Loja-virtual.git
+
+$ yarn install ou npm install
