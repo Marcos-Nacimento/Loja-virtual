@@ -26,15 +26,6 @@ export const Search = styled.TextInput `
     width: 200px;
 `;
 
-export const Description = styled.Text `
-    margin-top: 20px;
-    margin-left: 20px;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-`;
-
 export const Content = styled.ScrollView ``;
 
 export const Load = styled.ActivityIndicator `
