@@ -6,6 +6,7 @@ import
     Img, 
     Option, 
     Title,
+    Description,
      
 } from './styles'
 
@@ -20,18 +21,26 @@ const item =
         id: 2,
         img: 'url',
         descrip: 'name',
+    },
+    {
+        id: 3,
+        img: 'url',
+        descrip: 'name',
     }
 ]
 
 export default () => {
     return(
-        <Container>
-            {item.map((item) => (
-                <Option key={item.id}>
-                    <Title>{item.descrip}</Title>
-                    <Img souce={item.img}/>
-                </Option>
-            ))}
-        </Container>
+        <>
+            <Description>Em destaque</Description>
+            <Container>
+                {item.map((item) => (
+                    <Option key={item.id}>
+                        <Title>{item.descrip}</Title>
+                        <Img souce={item.img}/>
+                    </Option>
+                ))}
+            </Container>
+        </>
     )
 }
