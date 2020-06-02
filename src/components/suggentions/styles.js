@@ -23,6 +23,15 @@ export const Img = styled.Image``;
 export const Label = styled.Text`
   color: #fff;
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 14px;
+`;
+
+export const Description = styled.Text `
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
