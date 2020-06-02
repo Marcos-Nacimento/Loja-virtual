@@ -8,6 +8,7 @@ import HomeScreen from './screens/home'
 import AccountScreen from './screens/account'
 import FavoteScreen from './screens/favorite'
 import PromoScreen from './screens/promo'
+import SettingsScreen from './screens/settings'
 
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
@@ -22,13 +23,17 @@ const icons =
         name: 'star'
     },
 
-    Favoritos: {
+    Favorite: {
         name: 'heart',
     },
 
-    Config: {
+    Settings: {
         name: 'settings'
     },
+
+    Account: {
+        name: 'account'
+    }
 
 }
 
@@ -57,7 +62,7 @@ export default () => {
                 }}
             >
                 <Tab.Screen 
-                    name='Favoritos' 
+                    name='Favorite' 
                     component={FavoteScreen}
                 />
                 <Tab.Screen 
@@ -69,7 +74,11 @@ export default () => {
                     component={HomeScreen}
                 />
                 <Tab.Screen 
-                    name='Config' 
+                    name='Settings' 
+                    component={SettingsScreen}
+                />
+                <Tab.Screen
+                    name='Account'
                     component={AccountScreen}
                 />
             </Tab.Navigator>
