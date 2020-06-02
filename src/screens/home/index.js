@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import 
 { 
-    Container, 
-    Description, 
+    Container,  
     Header, 
     Logo, 
     Search, 
@@ -13,10 +12,13 @@ import
 } from './styles'
 
 import Suggentions from '../../components/suggentions'
+import Banner from '../../components/banner'
+import Products from '../../components/products'
 
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-export default () => {
+
+export default ({ navigation }) => {
     const[isLoad, setLoad] = useState(false)
 
     useEffect(() => {
@@ -29,7 +31,9 @@ export default () => {
         <Container>
             <Content>
                 <Header>
-                    <Logo>
+                    <Logo
+                        onPress={() => { navigation.navigate('Account') }}
+                    >
                         <MaterialCommunityIcons name='account' size={30} color={'#7159c1'} />
                     </Logo>
                        <Search placeholder='search' />
@@ -40,8 +44,9 @@ export default () => {
                     </Logo>
                 </Header>
                 <Load color='red' size={20} animating={isLoad}/>
-                <Description>Recomendaçoes</Description>
                 <Suggentions />
+                <Products />
+                <Banner />
             </Content>
         </Container>
     )
