@@ -11,7 +11,6 @@ export const Container = styled.ScrollView.attrs(() => ({
 `;
 
 export const Option = styled.TouchableOpacity`
-  background: #2f4f4f;
   width: 150px;
   height: 200px;
   border-radius: 8px;
@@ -21,7 +20,7 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const Img = styled.Image`
-  align-self: center;
+  
 `;
 
 export const Title = styled.Text `
