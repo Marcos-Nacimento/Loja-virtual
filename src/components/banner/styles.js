@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-export const Content = styled.View `
+export const Container = styled.View `
     margin-top: 25px;
     margin-bottom: 20px;
 `;
@@ -18,10 +18,7 @@ export const Banner = styled.View `
     border-radius: 10px;
 `;
 
-export const Description = styled.Text `
-    padding: 15px;
-    color: #fff;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 16px;
+export const Content = styled.View `
+    align-items: center;
+    padding: 10px;
 `;
