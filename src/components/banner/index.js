@@ -1,22 +1,25 @@
 import React from 'react'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import 
 { 
     Content, 
     Banner, 
-    Title, 
-    Description,
+    Title,
+    Container,
 
 } from './styles'
 
 export default () => {
     return(
-        <Content>
+        <Container>
             <Banner>
-                <Description>
-                    <Title>Fique em casa !!</Title>
-                </Description>
+                <Content>
+                    <MaterialCommunityIcons name='home' size={40} color='#fff' >
+                        
+                    </MaterialCommunityIcons>
+                </Content>
             </Banner>
-        </Content>
+        </Container>
     )
 }
