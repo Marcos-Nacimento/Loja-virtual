@@ -7,11 +7,13 @@ import
 
 } from './styles'
 
+import Login from '../../components/login'
+
 export default () => {
     return(
         <Container>
-            <Title>Home</Title>
-            
+            <Title>Login</Title>
+            <Login />
         </Container>
     )
 }
