@@ -10,19 +10,7 @@ import
 
 } from './styles'
 
-const items = 
-[
-    {
-        id: 1,
-        img: 'url',
-        name: 'Nike',
-    },
-    {
-        id: 2,
-        img: 'url',
-        name: 'Nike',
-    },
-]
+import items from '../data'
 
 export default () => {
     return(
@@ -31,7 +19,7 @@ export default () => {
             <Container>
                 {items.map((item) => (
                     <Option key={item.id}>
-                        <Img souce={item.img} />
+                        <Img souce={{uri: item.url}} key={item.id} />
                         <Label>{item.name}</Label>
                     </Option>
                 ))}
