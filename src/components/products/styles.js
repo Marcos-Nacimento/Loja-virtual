@@ -20,7 +20,8 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const Img = styled.Image`
-  
+  width: 200px;
+  height: 200px;
 `;
 
 export const Title = styled.Text `
