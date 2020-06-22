@@ -19,7 +19,7 @@ export default () => {
             <Container>
                 {items.map((item) => (
                     <Option key={item.id}>
-                        <Img souce={{uri: item.url}} key={item.id} />
+                        <Img source={{uri: item.url}} key={item.id} />
                         <Label>{item.name}</Label>
                     </Option>
                 ))}
