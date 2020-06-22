@@ -8,7 +8,6 @@ export const Container = styled.ScrollView.attrs(() => ({
         paddingLeft: 16,
     },
 }))`
-    background: #1e222b;
     height: 130px;
 `;
 
@@ -18,7 +17,11 @@ export const Option = styled.TouchableOpacity`
   align-items: center;
 `;
 
-export const Img = styled.Image``;
+export const Img = styled.Image`
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+`;
 
 export const Label = styled.Text`
   color: #fff;
