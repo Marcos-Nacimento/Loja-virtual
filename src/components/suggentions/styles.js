@@ -18,8 +18,8 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const Img = styled.Image`
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
 `;
 
