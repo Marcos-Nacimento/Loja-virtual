@@ -10,14 +10,14 @@ import
 
 } from './styles'
 
-import items from '../data'
+import { Stories } from '../data'
 
 export default () => {
     return(
         <>
             <Description>Recomendação</Description>
             <Container>
-                {items.map((item) => (
+                {Stories.map((item) => (
                     <Option key={item.id}>
                         <Img source={{uri: item.url}} key={item.id} />
                         <Label>{item.name}</Label>
